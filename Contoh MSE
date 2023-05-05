@@ -1,0 +1,7 @@
+import numpy as np
+# Given values
+Y_true = [1866.30,1866.30,1882.30,1903.20,1895.50]  # Y_true = Y (original values)
+# Calculated values
+Y_pred = [1879.8,1879.8,1879.8,1962.5,1959.05]  # Y_pred = Y'
+# Mean Squared Error
+MSE = np.square(np.subtract(Y_true,Y_pred)).mean()
